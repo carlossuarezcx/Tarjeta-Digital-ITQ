@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276538291948",
+    "project_id": "itq-td",
+    "storage_bucket": "itq-td.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276538291948:android:761e1a1fc8c4c984a0d7c9",
+        "android_client_info": {
+          "package_name": "com.td_itq.td_itqv3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276538291948-b9c67p172aslstshsaq4nfn3kjmrjskl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB05IUFuL7ZORsuwvceF5xcDC1D2Kd2HS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276538291948-b9c67p172aslstshsaq4nfn3kjmrjskl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

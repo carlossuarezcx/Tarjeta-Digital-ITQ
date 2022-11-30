@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_registrarse"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start"
+        android:text="Mis datos"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_registrarse">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_perfil_email"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/alternate_email_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_email_perfil" />
+
+            <TextView
+                android:id="@+id/lbl_perfil_nodecontrol"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="No. de control"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_perfil_nodecontrol"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/account_circle_48px"
+                android:drawablePadding="10dp"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/nunito"
+                android:hint="No. de control"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_nodecontrol" />
+
+            <TextView
+                android:id="@+id/lbl_reg_email_perfil"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Correo electrónico"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_nodecontrol" />
+
+            <TextView
+                android:id="@+id/lbl_reg_contraseña_perfil"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Nombre"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_email" />
+
+            <EditText
+                android:id="@+id/et_perfil_nombre"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/badge_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Nombre"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_contraseña_perfil" />
+
+            <TextView
+                android:id="@+id/lbl_perfil_contraseña_repit"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Apellidos"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_nombre" />
+
+            <EditText
+                android:id="@+id/et_perfil_apellidos"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/badge_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Apellidos"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_contraseña_repit" />
+
+            <TextView
+                android:id="@+id/lbl_semestre_perfil"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Semestre"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_fechanacimiento" />
+
+            <EditText
+                android:id="@+id/et_perfil_semestre"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/numbers_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Semestre"
+                android:padding="20dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_semestre_perfil" />
+
+            <TextView
+                android:id="@+id/lbl_perfil_carrera"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Carrera"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_semestre" />
+
+            <EditText
+                android:id="@+id/et_perfil_carrera"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/school_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Carrera"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_carrera" />
+
+            <TextView
+                android:id="@+id/lbl_perfil_fechanacimiento"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Fecha de nacimiento"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_apellidos" />
+
+            <EditText
+                android:id="@+id/et_perfil_fechanacimiento"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/calendar_month_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Fecha de nacimiento"
+                android:inputType="date"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_fechanacimiento" />
+
+            <TextView
+                android:id="@+id/lbl_perfil_celular"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Celular"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_carrera" />
+
+            <EditText
+                android:id="@+id/et_perfil_celular"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/phone_iphone_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Celular"
+                android:padding="20dp"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_celular" />
+
+
+            <TextView
+                android:id="@+id/lbl_perfil_password"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Contraseña nueva"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_celular" />
+
+            <EditText
+                android:id="@+id/et_perfil_password"
+                android:layout_width="355dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/password_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Contraseña nueva"
+                android:padding="20dp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_perfil_password" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_perfil_cambiar_foto"
+                android:layout_width="188dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/borde_redondeado"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Cambiar foto"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:backgroundTint="@color/azulitqfuerte"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_perfil_password" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_perfil_cambiar_datos"
+        android:layout_width="188dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/borde_redondeado"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Cambiar datos"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:backgroundTint="@color/azulitqfuerte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

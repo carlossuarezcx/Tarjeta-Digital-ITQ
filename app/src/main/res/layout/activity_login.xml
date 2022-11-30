@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_iniciasesion"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="256dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start"
+        android:text="Inicia sesión"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_aviso_cuenta3"
+        android:layout_width="177dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="start"
+        android:text="Olvidé mi contraseña"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <TextView
+        android:id="@+id/lbl_contraseña"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="start"
+        android:text="Contraseña"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="328dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/borde_redondeado"
+        android:backgroundTint="@color/NaranjaFuerte"
+        android:drawableLeft="@drawable/alternate_email_48px"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/nunito"
+        android:hint="correo"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_correo" />
+
+    <TextView
+        android:id="@+id/lbl_correo"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="start"
+        android:text="Correo"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_iniciasesion" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/borde_redondeado"
+        android:backgroundTint="@color/NaranjaFuerte"
+        android:drawableLeft="@drawable/password_48px"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/nunito"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_contraseña" />
+
+    <TextView
+        android:id="@+id/lbl_aviso_cuenta"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="start"
+        android:text="¿No tienes una cuenta?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <TextView
+        android:id="@+id/lbl_aviso_cuenta2_reg"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start"
+        android:text="Regístrate"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_aviso_cuenta" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/borde_redondeado_blanco"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Inicia sesión"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:backgroundTint="@color/azulitqfuerte"
+        app:iconTint="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logotecnm_log"
+        android:layout_width="126dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_iniciasesion"
+        app:layout_constraintEnd_toStartOf="@+id/logoitq_log"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_tecnm_2017"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/logoitq_log"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_removebg_preview__2_"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

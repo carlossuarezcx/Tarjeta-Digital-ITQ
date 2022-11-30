@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_reg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_registrarse"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start"
+        android:text="Registrarse"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="411dp"
+        android:layout_height="289dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_registrarse"
+        app:layout_constraintVertical_bias="0.092">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_reg_email"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/alternate_email_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Correo"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_email" />
+
+            <TextView
+                android:id="@+id/lbl_reg_nodecontrol"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="No. de control"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_reg_nodecontrol"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/account_circle_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="No. de control"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_nodecontrol" />
+
+            <TextView
+                android:id="@+id/lbl_reg_email"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Correo electrónico"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_nodecontrol" />
+
+            <TextView
+                android:id="@+id/lbl_reg_contraseña"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Contraseña"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_email" />
+
+            <EditText
+                android:id="@+id/et_reg_password"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/password_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_contraseña" />
+
+            <TextView
+                android:id="@+id/lbl_reg_contraseña_repit"
+                android:layout_width="173dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="36dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="start"
+                android:text="Repetir contraseña"
+                android:textAlignment="viewStart"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_password" />
+
+            <EditText
+                android:id="@+id/et_reg_password_repetir"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/borde_redondeado"
+                android:drawableLeft="@drawable/password_48px"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nunito"
+                android:hint="Repetir contraseña"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_reg_contraseña_repit"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_pickimg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/borde_redondeado_blanco"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Seleccionar imagen"
+                android:textColor="@color/azulitqfuerte"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:backgroundTint="@color/azulitqfuerte"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_password_repetir" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regbtn"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/borde_redondeado_blanco"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Registrarse"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:backgroundTint="@color/azulitqfuerte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/lbl_aviso_cuenta"
+        android:layout_width="189dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="start"
+        android:text="¿Ya tienes una cuenta?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/lbl_aviso_cuenta2_login"
+        android:layout_width="173dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="start"
+        android:text="Inicia sesión"
+        android:textAlignment="viewStart"
+        android:textColor="@color/azulitqfuerte"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_aviso_cuenta" />
+
+    <ImageView
+        android:id="@+id/logotecnm_reg"
+        android:layout_width="126dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_tecnm_2017" />
+
+    <ImageView
+        android:id="@+id/logoitq_reg"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_removebg_preview__2_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
